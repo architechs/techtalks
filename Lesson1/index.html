@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Intro to Web Concepts - Girl Develop It</title>
+  <title>Intro to Web Concepts</title>
 
   <meta name="description" content="This is the official Girl Develop It Core Intro Web Concepts course. Material was originally developed by Matt Torbin and Elise Wei.
 
@@ -38,8 +38,6 @@
 			<div class="slides">
 				<section>
 					<h3>Introduction to Web Concepts</h3>
-                    <p>or</p>
-                    <h4>What is that Web Developer talking about?</h4>
                 </section>
 
                 <section>
@@ -56,12 +54,7 @@
                         </li>
                         <li class="fragment">Building a web site
                             <ul>
-                                <li>Considerations, UX &amp; IA, tools</li>
-                            </ul>
-                        </li>
-                        <li class="fragment">Web development professionals
-                            <ul>
-                                <li>Team structure, hiring one, becoming one</li>
+                                <li>Considerations, tools</li>
                             </ul>
                         </li>
                     </ul>
@@ -132,20 +125,10 @@
                     <li class="fragment">Type a web site address into the address bar</li>
                     <li class="fragment">DNS connects you to the hosting server</li>
                     <li class="fragment">The files are then sent back to your computer for display</li>
-                    <li class="fragment">Sometimes code must be compiled before being sent back to you.</li>
                 </ul>
             </section>
 
             <!-- IDK --> 
-            <section>
-                <h3>Clients vs. Servers</h3>
-                <div class="left-align">
-                    <p class="fragment">Clients make requests, servers fulfill them (usually).</p>
-                    <p class="fragment">For our web discussions, client = browser, but search engine crawlers, command line interfaces, and other applications can also behave as clients.</p>
-                    <p class="fragment">While any type of computer can be used as a server, they are generally larger and more powerful than others.</p>
-                </div>
-            </section>
-
 <!-- Stretch break!! 
                 <section>
                     <h2>Break time!</h2>
@@ -158,14 +141,6 @@
                     <ul>
                         <li class="fragment">A simple text editor or code editor such as SublimeText, Notepad, or TextWrangler to write your code. Many can be found for free.</li>
                         <li class="fragment">A web browser such as Chrome, Firefox, or Safari to test your code. All popular modern browsers are free.</li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Tools of the trade</h3>
-                    <p class="left-align">You will also need:</p>
-                    <ul>
-                        <li class="fragment">An FTP (file transfer protocol) client such as WinSCP, Cyberduck, or CoffeeCup FTP to get files from your computer to the server. Many are free.</li>
-                        <li class="fragment">Optionally, an image editor such as IrfanView, Gimp, or Photoshop to edit images which will be used on the web site. Some are available for free.</li>
                     </ul>
                 </section>
             </section>
@@ -191,8 +166,9 @@
                 <!-- What is HTML?-->
                 <section>
                   <h3>What is HTML?</h3>
-                  <p>HTML is the code that allows us to build websites</p>
-                  <img src = "images/homepage-view.png">
+                  <p>HTML is the code that allows us to build websites.</p>
+                  <p>It is the backbone of every webpage.</p>
+                  
               </section>
 
               <section>
@@ -255,7 +231,7 @@
     <section>
         <h3>What we'll be building today</h3>
         <div class="left left-align" style="width: 45%;">
-            <p>Today we will be learning how to code a site from scratch using paragraphs, headings, links, images, and lists.</p>
+            <p>Today we will be building our own personal webpage using paragraphs, headings, lists, and images.</p>
         </div>
         <div class="right" style="width: 45%;">
             <img src="images/session1site.png"/>
@@ -282,12 +258,8 @@
           <pre><code class ="html">
             &lt;p>A paragraph is your content&lt;/p>
         </code></pre>
-    </li>
-    <li class = "fragment">
-        <div style = "font-size: 80%">Make the font of your paragraph blue and 18pt is presentation</div>
-        <p class ="blue">A paragraph is your content</p>
-    </li>
-</ul>
+        </li>
+    </ul>
 </section>
 
 <!-- HTML element-->
@@ -362,7 +334,7 @@
                 <li>
                     <pre><code class ="html">&lt;div id="copyright">&copy; GDI 2013&lt;/div>
                         &lt;img src="my_picture.jpg" /> 
-                        &lt;a href="http://girldevelopit.com">GDI&lt;/a>
+                        &lt;a href="http://google.com">Google&lt;/a>
                     </code></pre>
                 </li>
             </li>
@@ -572,7 +544,7 @@
 <pre><code>
     &lt;a href="http://www.girldevelopit.com" title="Girl Develop It Homepage">GDI&lt;/a>
 </code></pre>
-<p><a href="http://www.girldevelopit.com" title="Girl Develop It Homepage">GDI</a></p>
+<p><a href="http://www.google.com" title="Google">Google</a></p>
 <p>The &lt;a&gt; tag surrounds text or images to turn them into links</p>
 </section>
 
@@ -585,18 +557,13 @@
     </code></pre>
     <p><small>Link opens in a new window/tab with <strong>target="_blank"</strong></small></p>
     <!-- Change email to fit your chapter's needs-->
-    <pre><code>
-        &lt;a href="mailto:info@girldevelopit.com">E-mail us!&lt;/a>
-    </code></pre>
-    <p><small>Link opens mail program by inserting <strong>mailto:</strong> directly before the email address.</small></p>
 
 </section>
 
-<!-- TODO: Lets develop it-->
 <section class="hide-pdf">
     <h3>Let's Develop It</h3>
     <p>Let's add links to our site!</p>
-    <p>Add links that open in the same window, a new window and link to an e-mail address.</p>
+    <p>Add links that open in the same window and a new window.</p>
 </section>
 
 <!-- Images-->
@@ -605,13 +572,13 @@
   <p>Images have three components</p>
   <ul>
     <li>Tag: &lt;img/></li>
-    <li>Src attribute: "http://girldevelopit.com/assets/pink-logo.png"</li>
-    <li>Alt attribute: "Girl Develop It logo"</li>
+    <li>Src attribute: "https://www.google.com/images/srpr/logo11w.png"</li>
+    <li>Alt attribute: "Google logo"</li>
 </ul>
 <pre><code>
-    &lt;img src ="http://girldevelopit.com/assets/pink-logo.png" alt = "Girl Develop It Logo"/>
+    &lt;img src ="http://https://www.google.com/images/srpr/logo11w.png" alt = "Google Logo"/>
 </code></pre>
-<img src ="http://girldevelopit.com/assets/pink-logo.png" alt = "Girl Develop It Logo"/>
+<img src ="https://www.google.com/images/srpr/logo11w.png" alt = "Google Logo"/>
 <p><small>* Notice: This tag is our first example of a stand-alone or "self-closing" element.</small></p>
 
 </section>
@@ -622,19 +589,19 @@
       <div class = "left" style = "width:50%">
         <pre><code>
             &lt;p>
-            Imagine there's no Heaven &lt;br/>
-            It's easy if you try &lt;br/>
-            No hell below us  &lt;br/>
-            Above us only sky
+            This is my first line &lt;br/>
+            That was a line break &lt;br/>
+            Line number 3  &lt;br/>
+            One more break
             &lt;/p>
         </code></pre>
     </div>
     <div class = "left left-align" style = "width:50%">
         <p>
-            Imagine there's no Heaven <br/>
-            It's easy if you try <br/>
-            No hell below us  <br/>
-            Above us only sky
+            This is my first line <br/>
+            That was a page break <br/>
+            Line number 3  <br/>
+            One more break
         </p>
     </div>
     <div class ="clear"></div>
@@ -648,6 +615,7 @@
     <h3>Let's Develop It!</h3>
     <p>Let's add some images and line breaks to our page.</p>
     <p>We can even turn our images into links!</p>
+    <p>You can grab any image you like from the internet. Just be sure to copy the image url and put it in the <strong>src</strong> attribute of the <strong>img</strong> tag. </p>
 </section>
 <!-- Lists-->
 <section>
@@ -698,6 +666,7 @@
     <h3>Let's Develop it!</h3>
     <p>Let's add one of each ordered and unordered lists to our page.</p>
     <p>We can make a list of links or even a list of images!</p>
+    <p>Maybe add some interesting facts about yourself in an unordered list, and rank your favorite types of food in an ordered list.</p>
 </section>
 <!--Comments-->
 <section>
@@ -765,9 +734,31 @@
 </section>
 
 <section>
-  <h2>Questions?</h2>
-  <div style = "font-size:1200%; height:100%; margin-top:40%" class ="blue">?
-    <div class ="clear"></div></div>
+  <p style="margin-top: -100px">At this point, you might have a web page that looks like this</p>
+  <img src="images/samplePage.png">
+</section>
+
+<section>
+  <h2>Bonus</h2>
+  <p>Your webpage now has content but it's kinda boring.</br> Try and liven it up by styling it with <strong>CSS</strong>. </br>
+  <em>Hint: Start with a CSS file in the same directory as your html file. Be sure to save it as a .css file and remember to link it in the head of your html with</br></em> 
+  <pre><code>&ltlink rel="stylesheet" type="text/css" href="style.css"&gt</code></pre>
+</section>
+
+<section>
+  <h2>To get started</h2>
+  <p>These <strong>CSS</strong> tags will get you going</p>
+  This will make the page background beige and all text gray, except for h1 and h2 tags, which will be black.
+  <pre><code>
+body {
+    background-color: beige;
+    color: gray;
+}
+
+h1, h2 {
+  color: black;
+}</code></pre>
+  <p>Try to style the lists  on your page and make it more exciting!</p>
 </section>
 
 </div>
