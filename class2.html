@@ -692,7 +692,49 @@ p{
         <section>
           <h3 style="margin-top: -10%">Your page might look something like this</h3>
           <img style="border: none"src="images/about-me-styled.png">
-          <em style="font-size: 24px">Again, don't be discouraged if your page doesn't quite look like this. Remember that you can set the width and height of your images manually. Change some of the percentages and colors and make this page your own!</em>
+          <em style="font-size: 24px">This is only showing the About Me section. You should still have your header above this. Again, don't be discouraged if your page doesn't quite look like this. Remember that you can set the width and height of your images manually. Change some of the percentages and colors and make this page your own!</em>
+        </section>
+
+        <section>
+          <h3>Almost There</h3>
+          <p>We've got one more section to style and this one's easy! We'll start with styling the "quote" div.</p>
+          <ul>
+            <li>Push the div down from the about me div with margin-top</li>
+            <li>Add a background color and font color</li>
+            <li>Align the text to the center and set a font size</li>
+            This will apply to all text within the "quote" div
+          </ul>
+          <pre><code>
+            .quote {
+                margin-top: 5%;
+                background-color: #71969F;
+                color: white;
+                text-align: center;
+                font-size: 2em;
+            }
+          </code></pre>
+        </section>
+
+        <section>
+          <h3>Quote Style Cont.</h3>
+            <p>Let's use the descendant selector to select the paragraph inside the "quote" div.<br>
+            Let's push it in on the sides with margin-right and left and add some padding to give it a big color background.</p>
+            <pre><code>
+              .quote p {
+                    margin-left: 25%;
+                    margin-right: 25%;
+                    padding-top: 7%;
+                    padding-bottom: 7%;
+              }
+            </code></pre>
+        </section>
+
+        <section>
+          <h3 style="margin-top: -10%">You're Done!</h3>
+          <p>You have succesfully built and styled your own personal webpage!<br>
+          <em style="font-size: 24px">This isn't showing the header. The page is too big to show it all at once.<br>
+          The next section will show you how to put this on the internet!</em>
+          <img style="border: none" src="images/Final.png">
         </section>
 
       </div>
