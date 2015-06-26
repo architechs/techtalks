@@ -430,19 +430,108 @@ p{
         </section>
 
         <section>
-          <h3 style="margin-top: -10%">HTML</h3>
+          <h3>HTML</h3>
           <p>Let's start with the HTML file. We'll need to add all of the necessary tags to start off.</p>
           <pre><code class="html">
           &lt;!DOCTYPE html>
           &lt;html>
           &lt;head>
-            &lt;title>&lt;/title>
+            &lt;title>Michael Scott&lt;/title>
+            &ltlink rel="stylesheet" type="text/css" href="style.css">
           &lt;/head>
           &lt;body>
           
           &lt;/body>
           &lt;/html>
           </code></pre>
+          <p>Let's also add the title of the page (can be whatever you want) and link our css file. Remember, this is the preferred way to include css in your webpages!</p>
+        </section>
+
+        <section>
+          <h3 style="margin-top: -10%">Adding a Header</h3>
+          <p>Now let's start adding some content to the page.</p><ol style="font-size: 24px">
+            <li>
+              Start by making a div and giving it the class "header."
+            </li>
+            <li> 
+              Add a picture of yourself (or anything you like, just find one online), and make a div with the class "header-info"
+            </li> 
+            <li>
+              Let's also put in an h1 tag with the ID "page-title" since there is only one page title (This can be your name or any other title you want the page to have).
+            </li> 
+            <li>
+              Finally, put an h2 tag with a description (student, dancer, world's best boss, etc.) and then a paragraph tag with a little blurb about yourself. This and the h2 tag should all be in the "header-info" div.
+            </li>
+          </ol>
+          <pre><code>
+          &lt;body>
+            &lt;div class="header">
+              &lt;img src="MichaelScott.jpg">
+              &lt;div class="header-info">
+                &lt;h1 id="page-title">Michael Scott&lt;/h1>
+                &lt;h2>World's Best Boss&lt;/h2>
+                &lt;p>My name is Michael Scott and I love Dunder
+                   Mifflin Paper Company. I also like waking
+                   up to the smell of bacon.&lt;/p>
+              &lt;/div>
+            &lt;/div>
+           &lt;/body> 
+          </code></pre>
+        </section>
+
+        <section>
+          <h3>Your page should look something like this.</h3>
+          <img src="images/Header.png">
+        </section>
+
+        <section>
+          <h3 style="margin-top: -10%">About Me</h3>
+          <ol style="font-size: 24px">
+            <li>Make a div with the class "about-me"</li>
+            <li>Now let's add another picture of ourselves or whatever you like, and an h2 tag that says "About Me" (or whatever you want).</li>
+            <li>Add a paragraph with some information so visitors of your page can get to know you.</li>
+            <li>And the last thing for this div:
+            Add an unordered list (or ordered) with some of your interests, hobbies, favorite food, etc.</li>
+          </ol>
+          <pre><code>
+            &lt;div class="about-me">
+              &lt;img src="MichaelScott2.png">
+              &lt;h2>About Me&lt;/h2>
+              &lt;p>I am the Regional Manager of the Scranton branch of 
+              paper distribution company Dunder Mifflin Inc.
+              I am of English, Irish, German, and Scottish
+              ancestry. I'm also two-fifteenths Native American.&lt;/p>
+
+              &lt;ul>This is my space. Here are some of my interests
+                &lt;li>Writing Song Parodies&lt;/li>
+                &lt;li>Playing Ice Hockey&lt;/li>
+                &lt;li>Wearing Jeans&lt;/li>
+                &lt;li>Chrysler Cars&lt;/li>
+              &lt;/ul>
+            &lt;/div>
+          </code></pre>
+        </section>
+
+        <section>
+          <h3 style="margin-top: -10%">Your page should look something like this.</h3>
+          <img src="images/about-me.png">
+        </section>
+
+        <section>
+          <h3>Adding a Quote</h3>
+          <p>Now for the last part of the html for our page. Let's add a div with the class "quote" (this will go outside the "about-me" div. Then put in a paragraph with your favorite quote (or just say something witty).</p>
+          <pre><code>
+            &lt;div class="quote">
+              &lt;p>"Would I rather be feared or loved? 
+              Easy, both. I want people to be afraid of
+              how much they love me." &lt;em>-Me&lt;/em>&lt;/p>
+            &lt;/div>
+          </code></pre>
+        </section>
+
+        <section>
+          <img style="margin-top: -10%" src="images/no-css.png">
+        </section>
 
       </div>
       
