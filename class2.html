@@ -573,7 +573,65 @@ p{
           <em>Remember we use the "." selector to select classes</em>
         </section>
 
-        
+        <section>
+          <h3>Floating</h3>
+            <p>Let's have the image and text be side by side.</br>
+            To do this we use float: left.</br>
+            Let's also push the image more into the center with margin-right and put some padding between the image and the text.
+            </p>
+            <pre><code>
+              .header img {
+                  float: left;
+                  margin-left: 25%;
+                  padding-right: 4em;
+              }
+            </code></pre>
+            <em>Here we see the descendant selector.</br>
+            .header img will select all img tags inside the header div</em>
+        </section>
+
+        <section>
+          <h3>header-info</h3>
+            <p>Let's style the header-info div.</br>
+            Remember this is the div with our header tags and a paragraph.</br>
+            We'll push it in more to the center with margin-right, add some space to push it away from the image a little bit, and set our font size.</p>
+            <pre><code>
+              .header-info {
+                  margin-right: 25%;
+                  margin-top: 8%;
+                  padding-left: 4em;
+                  font-size: 1.2em;
+              }
+            </code></pre>
+        </section>
+
+        <section>
+          <h3>Selecting an ID</h3>
+          <p>We can select that h1 tag that we gave an ID of "page-title" with the "#" selector. Let's change the color of the header.</p>
+          <pre><code>
+            #page-title {
+                color: #959799;
+            }
+          </code></pre>
+          <em>Don't be afraid to choose your own colors. Remember this is your webpage!</em>
+        </section>
+
+        <section>
+          <h3 style="margin-top: -10%">Your page might look something like this</h3>
+          <img style="border: none"src="images/header-styled.png">
+          <em style="font-size: 24px">Don't be discouraged if your page doesn't quite look like this. Everyone will have different sized images so just play around with some of the percentages until you get a layout you like</em>
+        </section>
+
+        <section>
+          <p>If you're having trouble with your image you can manually set its width and height with css. A good starting point is height: 600px and width 450px.
+          <pre><code>
+            img {
+                width:  450px;
+                height: 600px;
+            }
+          </code></pre>
+          <em>Adjust these values until you find a good width and height for your image!</em>
+        </section>
 
       </div>
       
