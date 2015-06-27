@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(155, 200, 15);
+}
+#main {
+  background-color: black;
+  color: white;
+}
+#main a {
+  color: #CCFF99;
+}
+.blue_text {
+  color: blue;
+}
