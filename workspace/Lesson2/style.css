@@ -1,3 +1,4 @@
+/*
 body {
   background-color: rgb(155, 200, 15);
 }
@@ -11,3 +12,89 @@ body {
 .blue_text {
   color: blue;
 }
+*/
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font: "Verdana", sans-serif;
+}
+
+.header {
+  background-color: #3D4045;
+  color: white;
+  height: 80%;
+  padding-top: 5%;
+  border-bottom: 6px solid #71969F;
+}
+
+.header img {
+  float: left;
+  margin-left: 25%;
+  padding-right: 4em;
+}
+.header-info {
+  margin-right: 25%;
+  margin-top: 8%;
+  padding-left: 4em;
+  font-size: 1.2em;
+}
+#page-title {
+  color: #959799;
+}
+.about-me {
+  display: inline-block;
+  margin-top: 5%;
+  font-size: 1.2em;
+}
+.about-me img {
+  float: left;
+  height: 600px;
+  width: 450px;
+  padding-right: 7.5%;
+  margin-left: 20%;
+}
+.about-me p {
+  padding-left: 7.5%;
+  padding-bottom: 2%;
+}
+.about-me h2 {
+  font-size: 2em;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+ul {
+  font-size: 1.2em;
+  color: #6a727b;
+  list-style-type: square;
+  list-style-position: inside;
+}
+li {
+  padding-top: 5px;
+}
+.quote {
+  margin-top: 5%;
+  background-color: #71969F;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+.quote p {
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+
+
+
