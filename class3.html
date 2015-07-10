@@ -73,7 +73,7 @@
             <section>
                 <h3>What is JavaScript?</h3>
                 <ul>
-                    <li>JavaScript is a client-side. Your browser runs it directly. </li>
+                    <li>JavaScript is a client-side language. Your browser runs it directly. </li>
                     <li>JavaScript works with HTML and CSS.</li>
                     <li>With JavaScript, you can write code once and use it everywhere.</li>
                     <li>JavaScript lets you build <strong>dynamic webpages</strong></li>
@@ -81,7 +81,7 @@
                 </ul>
             </section>
             <section>
-                <h3>JavaScript is a client-side language</h3>
+                <h3 style="margin-top: -10%">JavaScript is a client-side language</h3>
                 <img src="images/client-server.jpg" alt="Laptop and server connected via the internet"/>
 				<p class="credit">Photo credits: <a href="http://www.flickr.com/photos/papalars/5210226441/" target="_blank">Andrew E. Larson</a> and <a href="http://www.flickr.com/photos/johnseb/3425464/" target="_blank">John Seb Barber</a> <a href="http://creativecommons.org/licenses/by-nc/2.0/" target="_blank">cc</a></p>
             </section>
@@ -223,7 +223,7 @@ document.write('Hello World!');
             
             <section>
 				<h3>Numbers</h3>
-                <p>Variable can be numbers, either integers or floats (decimals).</p>
+                <p>Variables can be numbers, either integers or floats (decimals).</p>
                 <pre><code>
 &lt;script&gt;
     var numberOfKittens = 5;
@@ -295,7 +295,7 @@ document.write('Hello World!');
       
             <section>
                 <h3>Strings</h3>
-                <p>Variable can be strings, groups of characters. You put your string in quotes.</p>
+                <p>Variables can be strings, (words). You put your string in quotes.</p>
                 <pre><code>
 &lt;script&gt;
     var kittensName = 'Fluffy';
@@ -435,7 +435,7 @@ console.log(receipt);
                 <h3>Global Scope</h3>
                 <p>A variable declared outside a function has a <span class="yellow">global</span> scope and can be accessed anywhere, even in a function.</p>
                   <pre><code>
-var awesomeGroup = 'Girl Develop It'; //Global scope
+var awesomeGroup = 'Develop It'; //Global scope
 function whatIsAwesome() {
     console.log (awesomeGroup + ' is pretty awesome.'); //Will work
 }
@@ -448,7 +448,7 @@ whatIsAwesome();
                 <p>A variable declared within a function has a <span class="yellow">local</span> scope and can only be accessed within that function.</p>
                 <pre><code>
 function whatIsAwesome() {
-    var awesomeGroup = 'Girl Develop It'; //Local scope
+    var awesomeGroup = 'Develop It'; //Local scope
     console.log ('I made a variable called awesomeGroup with a value of ' + awesomeGroup); //Will work
 }
 whatIsAwesome();
@@ -463,7 +463,7 @@ console.log (awesomeGroup + ' is pretty awesome.'); //Won't work
 var catsAreBest = true;
 var dogsRule = false;
 				</code></pre>                
-                <p>If you try to use another variable as a boolean, JavaScript will guess. The number 0, the empty string '', undefined, and null are considered false, everything else reads as true.</p>
+                <p>If you try to use another variable as a boolean, JavaScript will guess. The number 0, the empty string ' ', undefined, and null are considered false, everything else reads as true.</p>
             </section>
 
             <section>
@@ -482,7 +482,7 @@ if (bananas &gt; 0) {
 				</code></pre>
             </section>
             <section>
-				<h3>Comparison Operators</h3>
+				<h3 style="margin-top: -10%">Comparison Operators</h3>
                 <table class="smalltext">
                     <thead>
                       <tr>
