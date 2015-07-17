@@ -443,7 +443,7 @@ targetPic.onclick = function () {
             </section>
 
             <section>
-                <h3 style="margin-top: -10%">Step 1: Daytime</h3>
+                <h3 style="margin-top: -10%">Getting Started</h3>
                 <p>Let’s start with making a daytime scene on the page. Our HTML should look like this to start.</p>
                 <pre><code>
     &lt!DOCTYPE html>
@@ -462,29 +462,155 @@ targetPic.onclick = function () {
             </section>
 
             <section>
-                <h3 style="margin-top: -10%">Step 1: Daytime</h3>
-                <p style="font-size: .8em">Now we’re going to add a sun to the page. </br>
-                For the sun we are going to style a <strong>&ltdiv></strong>. To make a <strong>&ltdiv></strong> a circle we use the <strong>border-radius</strong> property and set it to <strong>100%</strong>. </br>
-                We’ll give the <strong>&ltdiv></strong> an ID of orb since the div will turn into the sun and moon. </br>
-                We also want the sun centered in the page which we can do with <strong>top, left, bottom, right,</strong> and <strong>margin</strong>.</p>
+                <h3 style="margin-top: -10%">Step 1: Let's make a simple button</h3>
+                <p>Within the HTML body, add a new <strong>&ltbutton></strong> tag</p>
                 <pre><code>
-    body {
-        background-color: lightblue;
-    }
+    &ltbody>
+        &ltbutton id="clickme"> &lt/button>
+    &lt/body>
+                </code></pre>
+                <ul>
+                    <li>Take a look at your webpage now. See that little button? Thats what the button tag creates. It’s a quick and easy way to make things that look like buttons on web pages.</li>
+                    <li>Click it. Nothing will happen. That’s ok. The button tag just creates the button object. We haven’t told it what to do yet. We’ll change that in the next two steps.</li>
+                </ul>
+            </section>
 
-    #orb {
-        height: 400px;
-        width: 400px;
-        border-radius: 100%;
-        position: absolute;
-        margin: auto;
-        top: 0; left: 0; bottom: 0; right: 0;
-        background-color: gold;
-        border: 10px solid orange;
+            <section>
+                <h3 style="margin-top: -10%">Step 2: Make a color class</h3>
+                <p>You can make buttons do pretty much anything like load images, animate objects, open new pages etc. However, for this project we want to turn night into day so we’ll focus on making that button change our background color first.</p>
+                <hr>
+                <ul>
+                    <li>Go to your css file and add a new class. We named ours <strong>.black</strong> Don't forget to start your class name with a period.</li>
+                    <li>Add a <strong>background-color</strong> property to that class.</li>
+                </ul>
+                <pre><code>
+    .black {
+        background-color: black;
     }
                 </code></pre>
             </section>
+
+            <section>
+                <h3>Step 3: Make it black</h3>
+                <p>Remember onclick events? Let's write a function to change the background color when our button is clicked.</p>
+                <pre><code>
+    document.getElementById("clickme").onclick = toggleColor;
+    function toggleColor() {
+        document.body.className = "black";
+    }
+                </code></pre>
+                <p>The className property adds our black class to the body</p>
+            </section>
+
+            <section>
+                <h3 style="margin-top: -10%">Step 4: Toggle with if else</h3>
+                <p style="font-size: .8em">Right now our button does one thing then stops. Let’s change that. In our toggleColor function, we can check to if the background is black and if it is, we can change the color to white. Else we can set the background color to black</p>
+                <pre><code>
+    function toggleColor() {
+        if (document.body.className == "black")
+            document.body.className = "white";
+        else
+            document.body.className = "black";
+     }
+                </code></pre>
+                <p>Now go to your webpage and see if your button toggles the background color!</p>
+                <em style="font-size: .8em">We didn't make a white class but the default background color for an element is white!</em>
+            </section>
+
+            <section>
+                <h3 style="margin-top: -10%">Step 5: Sun and moon</h3>
+                <p style="font-size: .8em">We have a button now but let's make it look good. We're gonna change some elements and make our own button using a <strong>div</strong></p>
+                <ul style="font-size: .8em">
+                    <li>Let's delete the <strong>&ltbutton></strong> tag in the HTML</li>
+                    <li>In our CSS, let's make a new ID for our button. Since it will turn into both the Sun and Moon let’s call it something neutral like #orb. We set our height and width to 300px.</li>
+                    <li>To make a &ltdiv> into circle add the border-radius property and turn it up to 100%. Neat trick, huh? It still technically has corners and will settle and position as a box but visually it looks like a circle, which is perfect for our purposes.</li>
+                    <li>We also want to position our orb in the center of the page</li>
+                </ul>
+                <pre><code>
+    #orb {
+        height: 300px;
+        width: 300px;
+        border-radius: 100%;
+        padding: 20px;
+        margin: auto;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        background-color: yellow;
+    }
+                </code></pre>
+            </section>
+
+            <section>
+                <p>Set up a &ltdiv> for the #orb in the body
+                <pre><code>
+    &ltbody>
+        &ltdiv id= "orb">&lt/div>
+    &lt/body>
+                </code></pre>
+            </section>
+
+            <section>
+                <p>Now let’s make the CSS classes that will turn our <strong>#orb</strong> into the <strong>.sun</strong> and <strong>.moon</strong> and our background into <strong>.day </strong> and <strong>.night</strong>.
+
+                
+<pre><code>    .sun {
+        background-color: #ffdd00;
+        border: 10px solid #f1c40f;
+    }
+    .moon {
+        background-color: #bdc3c7;
+        border: 10px solid #eaeff2;
+    }
+
+    .night {
+        background-color: #2c3e50;
+    }
+
+    .day {
+        background-color: #37d8e6;
+    }
+                </code></pre>
+            </section>
+
+            <section>
+                <p>Let’s go into the HTML and apply our classes to their relevant &ltdiv>. Let’s start with the daytime class and make that our initial view when the page loads.</p>
+                <pre><code>
+    &ltbody class="day">
+        &ltdiv id= "orb" class= "sun" onclick="toggleColor()">&lt/div>
+    &lt/body>
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Step 6: The transition</h3>
+                <p>Now let's modify our toggleClass function to work with our new code.
+                <pre><code>
+    document.getElementById("orb").onclick = toggleColor;
+    function toggleColor() {
+        if (document.body.className == "day")
+            document.body.className = "night";
+        else
+            document.body.className = "day";
+        if (document.getElementById("orb").className == "sun")
+            document.getElementById("orb").className = "moon";
+        else
+            document.getElementById("orb").className = "sun";
+     }
+                </code></pre>
+                <p><em>This is just like our previous function just updated to change to our newly made classes.</em>
+            </section>
  
+            <section>
+                <p style="margin-top: -10%">It should look something like this
+                <img style="border: none" src="images/Sun.png">
+            </section>
+
+            <section>
+                <p style="margin-top: -10%">And then when clicked
+                <img style="border: none" src="images/moon.png">
+                <h3>Congratulations! You're finished</h3>
+            </section>
+
 			</div><!-- Close .slides -->
   	
     </div><!-- Close .reveal -->
