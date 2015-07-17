@@ -354,7 +354,7 @@ submitButton.onclick = function () {
 
             <section>
                 <h3>Timing Events</h3>
-                <p>In JavaScript, is possible to execute some code at specified time intervals.</p>
+                <p>In JavaScript, it is possible to execute some code at specified time intervals.</p>
                 <ul>
                     <li><code>setInterval()</code> executes a function over and over again, at specified time intervals</li>
                     <li><code>setTimeout()</code>  executes a function, once, after waiting a specified number of milliseconds</li>
@@ -435,7 +435,55 @@ targetPic.onclick = function () {
                         <li><a href="http://www.codecademy.com/tracks/javascript" target="_blank">Code Academy</a>, with interactive JavaScript lessons to help you review.</li>
                         <li><a href="https://www.khanacademy.org/computing/cs/programming">Khan Academy</a> has a lot more information abut drawing and animations.</li>
                     </ul>
-            </section>        
+            </section>
+
+            <section>
+                <h3>Exercise: Day and Night</h3>
+                <p>Change an entire webpage from day to night with a click of your mouse. We'll be using html, css, and JavaScript.</p>
+            </section>
+
+            <section>
+                <h3 style="margin-top: -10%">Step 1: Daytime</h3>
+                <p>Let’s start with making a daytime scene on the page. Our HTML should look like this to start.</p>
+                <pre><code>
+    &lt!DOCTYPE html>
+    &lthtml>
+    &lthead>
+        &lttitle>Day and Night&lt/title>
+        &ltlink rel="stylesheet" type="text/css" href="style.css">
+        &ltscript src="action.js">&lt/script>
+    &lt/head>
+    &ltbody>
+
+    &lt/body>
+    &lt/html>
+                </code></pre>
+                <p><em>style.css</em> and <em>action.js</em> should be in the same directory as <em>index.html</em> Notice the difference in linking css and JavaScript
+            </section>
+
+            <section>
+                <h3 style="margin-top: -10%">Step 1: Daytime</h3>
+                <p style="font-size: .8em">Now we’re going to add a sun to the page. </br>
+                For the sun we are going to style a <strong>&ltdiv></strong>. To make a <strong>&ltdiv></strong> a circle we use the <strong>border-radius</strong> property and set it to <strong>100%</strong>. </br>
+                We’ll give the <strong>&ltdiv></strong> an ID of orb since the div will turn into the sun and moon. </br>
+                We also want the sun centered in the page which we can do with <strong>top, left, bottom, right,</strong> and <strong>margin</strong>.</p>
+                <pre><code>
+    body {
+        background-color: lightblue;
+    }
+
+    #orb {
+        height: 400px;
+        width: 400px;
+        border-radius: 100%;
+        position: absolute;
+        margin: auto;
+        top: 0; left: 0; bottom: 0; right: 0;
+        background-color: gold;
+        border: 10px solid orange;
+    }
+                </code></pre>
+            </section>
  
 			</div><!-- Close .slides -->
   	
