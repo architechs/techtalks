@@ -27,7 +27,7 @@
 		<!-- dark editor--><link rel="stylesheet" href="lib/css/dark.css">
 
 		<!-- If use the PDF print sheet so students can print slides-->
-		
+
 		<link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
 
 		<!--[if lt IE 9]>
@@ -45,8 +45,8 @@
                 <h3>Introduction to JavaScript Pt. 2</h3>
                 <h4>Lesson 4</h4>
             </section>
-                
-        
+
+
             <section>
               <h3>Welcome!</h3>
               <div class = "left-align">
@@ -91,7 +91,7 @@ while (bottlesOfBeer &gt;= 1) {
                 <pre><code>
 //will count 1 to 10
 for (var i = 1; i &lt;= 10; i++) {
-    console.log (i); 
+    console.log (i);
 }
 				</code></pre>
             </section>
@@ -101,11 +101,11 @@ for (var i = 1; i &lt;= 10; i++) {
                 <pre><code>
 //Count from 1 to 50
 for (var i = 1; i &lt;= 50; i++) {
-    console.log (i);       
+    console.log (i);
     //Says 'Buzz' after multiples of three
     if (i % 3 == 0) {
         console.log (' Buzz');
-    }        
+    }
     //Says 'Bang' after multiples of five
     if (i % 5 == 0) {
         console.log (' Bang');
@@ -117,7 +117,7 @@ for (var i = 1; i &lt;= 50; i++) {
                 <h3>Break</h3>
                 <p>To exit a loop, use the break statement.</p>
                 <pre><code>
-//Count from 100 to 200              
+//Count from 100 to 200
 for (var i = 100; i &lt;= 200; i++) {
     console.log('Testing ' + i);
     //Stop at the first multiple of 7
@@ -142,7 +142,7 @@ var arrayName = [element0, element1, ...];
 				</code></pre>
                 <p>You can put different types of data into an array.</p>
                 <pre><code>
-var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 
+var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green',
 'Blue', 'Indigo', 'Violet'];
 var lotteryNumbers = [33, 72, 64, 18, 17, 85];
 var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
@@ -152,27 +152,27 @@ var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
                 <h3>Array Length</h3>
                 <p>The length property tells you how many things are in an array</p>
                 <pre><code>
-var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 
+var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green',
 'Blue', 'Indigo', 'Violet'];
 console.log(rainbowColors.length);
-				</code></pre>                
+				</code></pre>
             </section>
             <section>
                 <h3>Using Arrays</h3>
                 <p>You can access items with "bracket notation" by using the position of the object you want. Programmers start counting at zero.</p>
                 <pre><code>
-var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 
+var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green',
 'Blue', 'Indigo', 'Violet'];
 var firstColor = rainbowColors[0];
 var lastColor = rainbowColors[6];
-				</code></pre>                
+				</code></pre>
             </section>
             <section>
                 <h3>Changing arrays</h3>
                 <p>You can use bracket notation to change an item in an array</p>
                 <pre><code>
 var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
-myFavoriteThings[0] = 'Asparagus';            
+myFavoriteThings[0] = 'Asparagus';
                 </code></pre>
             </section>
             <section>
@@ -180,12 +180,12 @@ myFavoriteThings[0] = 'Asparagus';
                 <p>Arrays do not have a fixed length. You can use "push" to add something to an array.</p>
                 <pre><code>
 var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
-myFavoriteThings.push('Dancing');              
+myFavoriteThings.push('Dancing');
                 </code></pre>
             </section>
             <section>
 				<h3>Let's Develop It</h3>
-                <p>Create an array of your favorite foods. Echo a few values onto your screen.</p> 
+                <p>Create an array of your favorite foods. Echo a few values onto your screen.</p>
 			</section>
 
             <section>
@@ -195,13 +195,13 @@ myFavoriteThings.push('Dancing');
 var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];
 for (var i = 0; i &lt; rainbowColors.length; i++) {
   console.log(rainbowColors[i]);
-}              
+}
                 </code></pre>
             </section>
             <section>
 				<h3>Let's Develop It</h3>
-                <p>Use a loop to make a list of all your favorite foods.</p> 
-			</section>    
+                <p>Use a loop to make a list of all your favorite foods.</p>
+			</section>
 
             <section>
                 <h3>Events</h3>
@@ -223,18 +223,18 @@ element.onclick = function () {
                     <li>onload: The event occurs when a document has been loaded</li>
                     <li>onfocus: The event occurs when an element gets focus</li>
                 </ul>
-            </section>            
+            </section>
             <section>
                 <h3>Events and Code</h3>
                 <p>How do you make an event trigger some code?</p>
                 <ol>
                     <li>Break your code into functions</li>
                     <li>Associate a function with a JavaScript event</li>
-                </ol>                    
+                </ol>
             </section>
             <section>
                 <h3>Calling Functions from HTML</h3>
-                <p>You can call a function directly from your HTML code:</p>            
+                <p>You can call a function directly from your HTML code:</p>
                 <pre><code>
 &lt;button id="clickMe" onclick="sayHi()"&gt;Click Me!&lt;/button&gt;
                 </code></pre>
@@ -262,8 +262,8 @@ myTarget.onclick=function(){
                 <p>Download <a href="files/class4.zip">this week's sample code</a>.</p>
                 <p>Make some JavaScript code fire after an <code>onmouseover</code> event. Try adding the event to the HTML and adding a listening function.</p>
 
-            </section>            
- 
+            </section>
+
             <section>
                 <h3>Preventing Defaults</h3>
                 <p>Elements like buttons and links have a default behaviors. However, the <code>event</code> objects has a built-in method to handle that:</p>
@@ -274,7 +274,7 @@ element.onclick = function (event) {
 
                 </code></pre>
             </section>
-                        
+
             <section>
                 <h3>This</h3>
                 <p>The keyword <code>this</code> references the element that the user has just interacted with</p>
@@ -291,21 +291,21 @@ element.onclick = function (event) {
             </section>
             <section>
                 <h3>Let's Develop It</h3>
-                <p>Write code that targets this link:</p> 
+                <p>Write code that targets this link:</p>
                 <pre><code>
-&lt;a href="http://girldevelopit.com/" id="gdiLink"&gt;Girl Develop It&lt;/a&gt;
+&lt;a href="http://google.com/" id="goog"&gt;Google&lt;/a&gt;
                 </code></pre>
-                <p>When a user clicks the link, the page should display an error message instead of going to the Girl Develop It homepage.</p>
-            </section>            
-    
-            
+                <p>When a user clicks the link, the page should display an error message instead of going to Google.</p>
+            </section>
+
+
             <section>
                 <h3>Forms</h3>
                 <p>You can collect information from users to use in functions. The most common method is an HTML form</p>
                 <pre><code>
 &lt;form id="temperatureForm"&gt;
-    &lt;label for="temp"&gt;Temperature:&lt;/label&gt; &lt;input type="text" id="temp" size="3"/&gt; degrees in 
-    &lt;input type="radio" name="tempFormat" value="F" checked /&gt;Fahrenheit 
+    &lt;label for="temp"&gt;Temperature:&lt;/label&gt; &lt;input type="text" id="temp" size="3"/&gt; degrees in
+    &lt;input type="radio" name="tempFormat" value="F" checked /&gt;Fahrenheit
     &lt;input type="radio" name="tempFormat" value="C" /&gt;Celsius &lt;br /&gt;
     &lt;label for="submitButton"&gt;&lt;/label&gt; &lt;input id="tempSubmitButton" type="submit" value="Submit" /&gt;
 &lt;/form&gt;
@@ -350,7 +350,7 @@ submitButton.onclick = function () {
             <section>
                 <h3>Let's Develop It</h3>
                 <p>Collect a value from the input box on the page. Use it inside a function of some kind. For example, collect a number and multiply it by five or collect a name and display a greeting.</p>
-            </section>  
+            </section>
 
             <section>
                 <h3>Timing Events</h3>
@@ -414,8 +414,8 @@ var targetPic = document.getElementById('turtlePic');
 targetPic.onclick = function () {
     var leftMarginValue = 0;
     function increaseMargin() {
-        leftMarginValue++  // update parameter each time 
-        targetPic.style.marginLeft = leftMarginValue + 'px' //set left margin 
+        leftMarginValue++  // update parameter each time
+        targetPic.style.marginLeft = leftMarginValue + 'px' //set left margin
         if (leftMarginValue === 200)  // check finish condition {
             clearInterval(movePic);
         }
@@ -552,7 +552,7 @@ targetPic.onclick = function () {
             <section>
                 <p>Now let’s make the CSS classes that will turn our <strong>#orb</strong> into the <strong>.sun</strong> and <strong>.moon</strong> and our background into <strong>.day </strong> and <strong>.night</strong>.
 
-                
+
 <pre><code>    .sun {
         background-color: #ffdd00;
         border: 10px solid #f1c40f;
@@ -599,7 +599,7 @@ targetPic.onclick = function () {
                 </code></pre>
                 <p><em>This is just like our previous function just updated to change to our newly made classes.</em>
             </section>
- 
+
             <section>
                 <p style="margin-top: -10%">It should look something like this
                 <img style="border: none" src="images/Sun.png">
@@ -612,7 +612,7 @@ targetPic.onclick = function () {
             </section>
 
 			</div><!-- Close .slides -->
-  	
+
     </div><!-- Close .reveal -->
 
 
